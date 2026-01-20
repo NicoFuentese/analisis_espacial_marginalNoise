@@ -1,0 +1,22 @@
+# Análisis de datos y cálculo numérico (Sección 6.8.3)
+pandas
+numpy
+scipy
+
+# Datos Geoespaciales y Mapas (Sección 6.10 - GIS)
+geopandas
+shapely
+matplotlib
+descartes
+folium
+mapclassify
+
+# Cálculo Simbólico para Ruido Marginal (Sección 6.4)
+sympy
+
+# Entorno de ejecución para VS Code
+jupyter
+ipykernel
+
+#libreria Uber
+h3
