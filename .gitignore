@@ -3,6 +3,8 @@ data/**/*
 
 # Excepto los archivos .gitkeep
 !**/ .gitkeep
+!data/redVial/
+!data/redVial/**
 
 # Ignorar archivos pesados específicos por si acaso
 *.csv
