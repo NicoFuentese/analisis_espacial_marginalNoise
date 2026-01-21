@@ -4,11 +4,17 @@ import shutil
 import glob
 from pathlib import Path
 
+#windows
+#ru = 'C:/Users/NicoF/Downloads'
+
+#ubuntu
+ru = '~/Downloads'
+
 ruta_c = 'data'
 
 #funciones
 def capturar_shapefile():
-    origen_dir = os.path.expanduser('~/Downloads/RedVial/')
+    origen_dir = os.path.expanduser(Path(ru) / "RedVial")
     destino_dir = Path(ruta_c) / "RedVial"
     nombre_capa = 'RedVial'
 
@@ -27,18 +33,25 @@ def capturar_shapefile():
         print(f"No se encontraron archivos para {nombre_capa} en el origen.")
 
 def capturar_csv(nombre_archivo):
-    origen = Path.home() / "Downloads" / nombre_archivo
-    destino_carpeta = Path(ruta_c)
-    destino_archivo = destino_carpeta / nombre_archivo
+    try:
+        origen = Path(os.path.expanduser(ru)) / nombre_archivo
+        destino_carpeta = Path(ruta_c)
+        destino_archivo = destino_carpeta / nombre_archivo
 
-    destino_carpeta.mkdir(parents=True, exist_ok=True)
+        destino_carpeta.mkdir(parents=True, exist_ok=True)
 
-    if origen.exists():
+        if not origen.exists():
+            print(f"Error: No se encontró el archivo en {origen}")
+            return
+
         shutil.copy2(origen, destino_archivo)
         print(f"Archivo {origen.name} copiado a {destino_carpeta}/")
         print("Datos actualizados correctamente.")
-    else:
-        print(f"Error: No se encontró el archivo en {origen}")
+        
+    except PermissionError:
+        print(f"Error: Permisos insuficientes para copiar el archivo")
+    except Exception as e:
+        print(f"Error al copiar archivo: {e}")
 
 #main
 if __name__ == "__main__":
