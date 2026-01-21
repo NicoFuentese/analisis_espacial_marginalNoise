@@ -1,3 +1,6 @@
+# rutas
+pathlib
+
 # Análisis de datos y cálculo numérico (Sección 6.8.3)
 pandas
 numpy
