@@ -5,10 +5,10 @@ import glob
 from pathlib import Path
 
 #windows
-#ru = 'C:/Users/NicoF/Downloads'
+ru = 'E:\PROYECTOS\analisis_espacial_marginalNoise'
 
 #ubuntu
-ru = '~/Downloads'
+#ru = '~/Downloads'
 
 ruta_c = 'data'
 

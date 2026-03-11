@@ -1,5 +1,5 @@
-data/**/*
 .venv/
+data/data_generada/
 
 # Excepto los archivos .gitkeep
 !**/ .gitkeep
@@ -8,7 +8,7 @@ data/**/*
 
 # Ignorar archivos pesados específicos por si acaso
 *.csv
-*.html
 *.gpkg
 *.shp
+*.html
 *.dbf
