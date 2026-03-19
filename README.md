@@ -1,4 +1,5 @@
 # analisis_espacial_marginalNoise PRototipo 1
+
 Este repositorio contiene la arquitectura de procesamiento (pipeline espacial) diseñada para evaluar el impacto del ruido del tráfico vehicular a escala macro-urbana. La metodología fusiona modelos físicos de emisión acústica con macro-simulación de tráfico y datos de demanda poblacional mediante grillas hexagonales (H3).
 ---
 
