@@ -25,6 +25,8 @@ Red topológica de calles extraída (ej. vía OpenStreetMap) y procesada geomét
   * `velocidad_vf`: Velocidad máxima permitida o Flujo Libre ($v_f$).
   * `lanes`: Número de pistas (utilizado para calcular la Densidad de Atasco, $k_j$).
 
+---
+
 ## Instalacion y funcionamiento
 
 ### 1. Activar Ambiente Virtual
@@ -36,6 +38,8 @@ source .venv/bin/activate
 #deactivar
 deactivate
 ```
+
+---
 
 ## 2. Subir la data a utilizar
 Se puede subir la data a traves de un programa. Pero se puede realizar manual en la carpeta data.
