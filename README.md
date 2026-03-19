@@ -29,11 +29,23 @@ Red topológica de calles extraída (ej. vía OpenStreetMap) y procesada geomét
 
 ## Instalacion y funcionamiento
 
+### Crear el ambiente virtual
+
+```powershell
+python -m venv .venv
+pip install -r requirements.txt
+```
+
+
 ### 1. Activar Ambiente Virtual
 
 ```powershell
 # Activar ambiente virtual con dependencias
+#ubuntu
 source .venv/bin/activate
+
+#windows
+.\.venv\Scripts\Activate.ps1
 
 #deactivar
 deactivate
